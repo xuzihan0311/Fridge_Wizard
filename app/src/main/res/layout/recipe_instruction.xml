@@ -48,13 +48,15 @@
         android:layout_weight="0.25" />
 
     <Button
-        android:text="Go Back Fridge"
-        android:layout_width="102dp"
+        android:text="Go Back To Your Fridge"
+        android:layout_width="248dp"
         android:layout_height="wrap_content"
-        android:id="@+id/Fridge"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="casual" />
+        android:id="@+id/goBack"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp" />
 
 </LinearLayout>
