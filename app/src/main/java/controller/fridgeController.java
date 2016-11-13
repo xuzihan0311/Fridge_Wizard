@@ -48,7 +48,9 @@ public class fridgeController extends AppCompatActivity{
 
         list = (ListView) findViewById(R.id.listViewitems);
         if (addController.isAdded) {
-            myItems.add(addController.selectedItem);
+            if (!myItems.contains(addController.selectedItem)) {
+                myItems.add(addController.selectedItem);
+            }
             addController.isAdded = false;
         }
         if (removeController.isRemoved) {
