@@ -9,26 +9,40 @@ import android.widget.TextView;
 
 import com.appathon.alex.fridge_wizard.R;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by xingxing on 11/13/16.
  */
 
 public class instructionController extends AppCompatActivity {
+    ImageView image1;
+    ImageView image2;
+    ImageView image3;
+    ImageView image4;
+
+    TextView name1;
+    TextView name2;
+    TextView name3;
+    TextView name4;
+
+    String[] img_url = new String[4];
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.instruction);
 
-        ImageView image1 = (ImageView) findViewById(R.id.recipe1);
-        ImageView image2 = (ImageView) findViewById(R.id.recipe2);
-        ImageView image3 = (ImageView) findViewById(R.id.recipe3);
-        ImageView image4 = (ImageView) findViewById(R.id.recipe4);
+        image1 = (ImageView) findViewById(R.id.recipe1);
+        image2 = (ImageView) findViewById(R.id.recipe2);
+        image3 = (ImageView) findViewById(R.id.recipe3);
+        image4 = (ImageView) findViewById(R.id.recipe4);
+
         image1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
-
         });
         image2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -51,10 +65,10 @@ public class instructionController extends AppCompatActivity {
             }
 
         });
-        TextView name1 = (TextView) findViewById(R.id.recipeName1);
-        TextView name2 = (TextView) findViewById(R.id.recipeName2);
-        TextView name3 = (TextView) findViewById(R.id.recipeName3);
-        TextView name4 = (TextView) findViewById(R.id.recipeName4);
+        name1 = (TextView) findViewById(R.id.recipeName1);
+        name2 = (TextView) findViewById(R.id.recipeName2);
+        name3 = (TextView) findViewById(R.id.recipeName3);
+        name4 = (TextView) findViewById(R.id.recipeName4);
         name1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
@@ -85,6 +99,8 @@ public class instructionController extends AppCompatActivity {
         });
 
     }
-
+    public void setImageURL(String[] urls) {
+        urls = img_url;
+    }
 
 }
