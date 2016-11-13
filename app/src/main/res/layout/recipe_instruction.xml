@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -48,12 +49,17 @@
         android:layout_weight="0.25" />
 
     <Button
-        android:text="Go Back Fridge"
-        android:layout_width="102dp"
+        android:text="Go Back To Fridge"
+        android:layout_width="191dp"
         android:layout_height="wrap_content"
-        android:id="@+id/Fridge"
-        android:layout_marginLeft="140dp"
+        android:id="@+id/goBack"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="80dp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="90dp" />
 
 </LinearLayout>
