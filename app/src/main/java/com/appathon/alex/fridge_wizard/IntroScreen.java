@@ -2,13 +2,13 @@ package com.appathon.alex.fridge_wizard;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.PixelFormat;
 import android.os.Bundle;
-import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import controller.FridgeController;
 
 /**
  * Created by bigjohnlin on 11/13/2016.
@@ -37,7 +37,7 @@ public class IntroScreen extends Activity {
         text.startAnimation(anim);
 
         Animation anim1 = AnimationUtils.loadAnimation(this, R.anim.move_up2);
-        ImageView fridge = (ImageView) findViewById(R.id.fridge_animation);
+        ImageView fridge = (ImageView) findViewById(R.id.f);
         fridge.startAnimation(anim1);
 
         introThread = new Thread() {

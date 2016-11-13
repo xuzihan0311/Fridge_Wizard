@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fridge extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fridge);
-    }
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.fridge);
+//    }
 }

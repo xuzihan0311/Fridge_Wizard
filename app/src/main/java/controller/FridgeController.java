@@ -1,10 +1,14 @@
-package com.appathon.alex.fridge_wizard;
+package controller;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import com.appathon.alex.fridge_wizard.R;
+
+import controller.instructionController;
 
 import static com.appathon.alex.fridge_wizard.R.layout.additems;
 
@@ -26,7 +30,7 @@ public class FridgeController extends AppCompatActivity{
         addItem = (Button) findViewById(R.id.addItem);
         addItem.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), additems.class); //From the addItems.xml Controller
+                Intent myIntent = new Intent(view.getContext(), addController.class); //From the addItems.xml Controller
                 startActivityForResult(myIntent, 0);
             }
         });
