@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dairy_array">
+        <item>Butter</item>
+        <item>Cheese - Blue</item>
+        <item>Cheese - Cheddar</item>
+        <item>Cheese - Colby</item>
+        <item>Cheese - Parmesan</item>
+        <item>Cheese - Pepper Jack</item>
+        <item>Cheese - Swiss</item>
+        <item>Condensed Milk</item>
+        <item>Eggs</item>
+        <item>Milk</item>
+    </string-array>
+</resources>

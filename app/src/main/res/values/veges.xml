@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="veges_array">
+        <item>Asparagus</item>
+        <item>Bell Peppers</item>
+        <item>Broccoli</item>
+        <item>Carrots</item>
+        <item>Cauliflower</item>
+        <item>Celery</item>
+        <item>Corn</item>
+        <item>Green Beans</item>
+        <item>Green Onions</item>
+        <item>Lettuces</item>
+        <item>Mushrooms</item>
+        <item>Onions</item>
+        <item>Peas</item>
+        <item>Potatoes</item>
+        <item>Radishes</item>
+        <item>Snow Peas</item>
+        <item>Spinach</item>
+        <item>Sprouts</item>
+        <item>Squash</item>
+        <item>Sweet Potatoes</item>
+        <item>Tomatoes</item>
+        <item>Zucchini</item>
+    </string-array>
+</resources>

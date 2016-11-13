@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fruits_array">
+        <item>Apples</item>
+        <item>Blackberries</item>
+        <item>Blueberries</item>
+        <item>Cantaloupes</item>
+        <item>Cherries</item>
+        <item>Grapes</item>
+        <item>Limes</item>
+        <item>Mangoes</item>
+        <item>Oranges</item>
+        <item>Pineapples</item>
+        <item>Pomegranates</item>
+        <item>Strawberries</item>
+        <item>Watermelons</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>Dairy, Eggs, Cheese</item>
+        <item>Fruits</item>
+        <item>Meat</item>
+        <item>Vegetables</item>
+    </string-array>
+</resources>

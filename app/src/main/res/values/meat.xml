@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="meat_array">
+        <item>Bacon</item>
+        <item>Beef - Grounded</item>
+        <item>Beef - Steak</item>
+        <item>Chicken - Breasts</item>
+        <item>Chicken - Thighs</item>
+        <item>Chicken - Wings</item>
+        <item>Clams</item>
+        <item>Crabs</item>
+        <item>Crawfish</item>
+        <item>Ham</item>
+        <item>Pork</item>
+        <item>Salmon</item>
+        <item>Sausages</item>
+        <item>Shrimp</item>
+        <item>Turkey</item>
+    </string-array>
+</resources>
