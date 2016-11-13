@@ -54,6 +54,7 @@
         android:id="@+id/Fridge"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual" />
 
 </LinearLayout>

@@ -42,7 +42,8 @@
             android:ems="10"
             tools:layout_editor_absoluteY="251dp"
             tools:layout_editor_absoluteX="30dp"
-            android:id="@+id/recipeName1" />
+            android:id="@+id/recipeName1"
+            android:fontFamily="casual" />
 
         <TextView
             android:layout_width="120dp"
@@ -52,7 +53,8 @@
             android:ems="10"
             tools:layout_editor_absoluteY="248dp"
             tools:layout_editor_absoluteX="224dp"
-            android:id="@+id/recipeName2" />
+            android:id="@+id/recipeName2"
+            android:fontFamily="casual" />
     </TableRow>
 
     <TableRow
@@ -90,7 +92,8 @@
             android:ems="10"
             tools:layout_editor_absoluteY="443dp"
             tools:layout_editor_absoluteX="35dp"
-            android:id="@+id/recipeName3" />
+            android:id="@+id/recipeName3"
+            android:fontFamily="casual" />
 
         <TextView
             android:layout_width="120dp"
@@ -100,7 +103,8 @@
             android:ems="10"
             tools:layout_editor_absoluteY="439dp"
             tools:layout_editor_absoluteX="224dp"
-            android:id="@+id/recipeName4" />
+            android:id="@+id/recipeName4"
+            android:fontFamily="casual" />
 
     </TableRow>
 
