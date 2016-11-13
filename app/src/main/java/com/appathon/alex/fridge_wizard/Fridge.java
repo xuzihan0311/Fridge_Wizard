@@ -12,5 +12,4 @@ public class Fridge extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fridge);
     }
-
 }

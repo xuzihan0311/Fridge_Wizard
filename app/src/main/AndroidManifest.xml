@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Fridge">
+        <activity android:name=".FridgeController">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

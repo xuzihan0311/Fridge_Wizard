@@ -51,7 +51,7 @@ public class IntroScreen extends Activity {
                         waited += 70;
                     }
                     Intent intent = new Intent(IntroScreen.this,
-                            Fridge.class);
+                            FridgeController.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     IntroScreen.this.finish();
