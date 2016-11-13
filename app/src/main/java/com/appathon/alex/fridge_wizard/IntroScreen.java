@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import controller.FridgeController;
+import controller.fridgeController;
 
 /**
  * Created by bigjohnlin on 11/13/2016.
@@ -51,7 +51,7 @@ public class IntroScreen extends Activity {
                         waited += 70;
                     }
                     Intent intent = new Intent(IntroScreen.this,
-                            FridgeController.class);
+                            fridgeController.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     IntroScreen.this.finish();

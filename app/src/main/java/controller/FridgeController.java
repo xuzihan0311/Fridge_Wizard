@@ -16,7 +16,7 @@ import static com.appathon.alex.fridge_wizard.R.layout.additems;
  * Created by bigjohnlin on 11/13/2016.
  */
 
-public class FridgeController extends AppCompatActivity{
+public class fridgeController extends AppCompatActivity{
 
     Button addItem;
     Button generateRecipe;
