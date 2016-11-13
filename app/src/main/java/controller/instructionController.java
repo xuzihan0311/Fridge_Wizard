@@ -27,6 +27,7 @@ public class instructionController extends AppCompatActivity {
     TextView name4;
 
     String[] img_url = new String[4];
+    String[] recipe_name = new String[4];
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
