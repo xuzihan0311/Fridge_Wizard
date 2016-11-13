@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 
 import com.appathon.alex.fridge_wizard.R;
 import android.widget.AdapterView.OnItemSelectedListener;
+
+import java.util.ArrayList;
 
 import static android.R.id.list;
 import static com.appathon.alex.fridge_wizard.R.id.categorySpinner;
@@ -25,11 +28,15 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
 
     Button addButton;
     Button cancelButton;
+//    ListView itemsList;
+//    ListAdapter itemsListAdapter;
 
-    private static String selectedItem;
+    static String selectedItem;
+    static boolean isAdded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        isAdded = false;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_items);
 
@@ -46,6 +53,15 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+//                itemsList = (ListView) findViewById(R.id.listViewitems);
+//                ArrayList<String> listItems = new ArrayList<>();
+//                listItems.add(selectedItem);
+//                itemsListAdapter = new ArrayAdapter<String>(this,
+//                        android.R.layout.simple_list_item_1, listItems);
+//                itemsList.setAdapter(itemsListAdapter);
+//                itemsListAdapter.notifyDataSetChanged();
+
+                isAdded = true;
 
                 Intent myIntent = new Intent(view.getContext(), fridgeController.class);
                 startActivityForResult(myIntent, 0);
@@ -55,6 +71,9 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
         cancelButton = (Button) findViewById(R.id.cancel);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
+                isAdded = false;
+
                 Intent myIntent = new Intent(view.getContext(), fridgeController.class);
                 startActivityForResult(myIntent, 0);
             }

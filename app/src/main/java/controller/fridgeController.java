@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -15,6 +16,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -35,6 +38,8 @@ public class fridgeController extends AppCompatActivity{
     String[] stringItems;
     String ingredient;
 
+    static List<String> myItems = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +54,11 @@ public class fridgeController extends AppCompatActivity{
         });
 
         list = (ListView) findViewById(R.id.listViewitems);
-        adapter = list.getAdapter();
+        if (addController.isAdded) {
+            myItems.add(addController.selectedItem);
+        }
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myItems);
+        list.setAdapter(adapter);
         if (adapter != null) {
             stringItems = new String[adapter.getCount()];
             for (int a = 0; a < adapter.getCount(); a++) {
