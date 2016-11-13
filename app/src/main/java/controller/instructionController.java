@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.appathon.alex.fridge_wizard.R;
 
@@ -52,10 +53,38 @@ public class instructionController extends AppCompatActivity {
             }
 
         });
-        EditText name1 = (EditText) findViewById(R.id.recipeName1);
-        EditText name2 = (EditText) findViewById(R.id.recipeName2);
-        EditText name3 = (EditText) findViewById(R.id.recipeName3);
-        EditText name4 = (EditText) findViewById(R.id.recipeName4);
+        TextView name1 = (TextView) findViewById(R.id.recipeName1);
+        TextView name2 = (TextView) findViewById(R.id.recipeName2);
+        TextView name3 = (TextView) findViewById(R.id.recipeName3);
+        TextView name4 = (TextView) findViewById(R.id.recipeName4);
+        name1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+        name2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+        name3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+        name4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
 
     }
 
