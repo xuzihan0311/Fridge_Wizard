@@ -3,6 +3,7 @@ package com.appathon.alex.fridge_wizard;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -20,25 +21,20 @@ public class IntroScreen extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
+        fade();
         animate();
+    }
+    public void fade(){
+        ImageView image = (ImageView)findViewById(R.id.rock);
+        Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+        image.startAnimation(animation1);
+        animation1.reset();
     }
 
     Thread introThread;
 
     private void animate() {
-        Animation anim = AnimationUtils.loadAnimation(this, R.anim.background);
-        anim.reset();
-        LinearLayout lay = (LinearLayout) findViewById(R.id.layout1);
-        lay.startAnimation(anim);
 
-        anim = AnimationUtils.loadAnimation(this, R.anim.move_up);
-        anim.reset();
-        ImageView text = (ImageView) findViewById(R.id.intro);
-        text.startAnimation(anim);
-
-        Animation anim1 = AnimationUtils.loadAnimation(this, R.anim.move_up2);
-        ImageView fridge = (ImageView) findViewById(R.id.f);
-        fridge.startAnimation(anim1);
 
         introThread = new Thread() {
             @Override
@@ -48,7 +44,7 @@ public class IntroScreen extends Activity {
                     // Intro screen pause time
                     while (waited < 3500) {
                         sleep(100);
-                        waited += 70;
+                        waited += 60;
                     }
                     Intent intent = new Intent(IntroScreen.this,
                             fridgeController.class);
