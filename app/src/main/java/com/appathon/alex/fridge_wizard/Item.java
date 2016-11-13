@@ -7,7 +7,9 @@ package com.appathon.alex.fridge_wizard;
 // Items the user has in
 // the fridge like apple, kale and so on
 public class Item {
+
     private String name;
+    
     public Item(String name) {
         this.name = name;
     }
