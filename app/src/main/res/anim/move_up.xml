@@ -6,8 +6,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:fromXDelta="0%"
         android:toXDelta="0%"
-        android:fromYDelta="400%"
-        android:toYDelta="200%"
-        android:duration="2000"
+        android:fromYDelta="200%"
+        android:toYDelta="450%"
+        android:duration="1000"
         android:zAdjustment="top" />
 </set>

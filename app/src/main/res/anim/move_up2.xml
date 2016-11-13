@@ -4,10 +4,10 @@
 
     <translate
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:fromXDelta="0%"
-        android:toXDelta="0%"
-        android:fromYDelta="600%"
-        android:toYDelta="400%"
-        android:duration="2000"
+        android:fromXDelta="50%"
+        android:toXDelta="50%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%"
+        android:duration="1000"
         android:zAdjustment="top" />
 </set>
