@@ -50,10 +50,12 @@ public class fridgeController extends AppCompatActivity{
 
         list = (ListView) findViewById(R.id.listViewitems);
         adapter = list.getAdapter();
-        stringItems = new String[adapter.getCount()];
-        for (int a = 0 ; a < adapter.getCount(); a++) {
-            System.out.println(adapter.getItem(a).toString());
-            stringItems[a] = adapter.getItem(a).toString();
+        if (adapter != null) {
+            stringItems = new String[adapter.getCount()];
+            for (int a = 0; a < adapter.getCount(); a++) {
+                System.out.println(adapter.getItem(a).toString());
+                stringItems[a] = adapter.getItem(a).toString();
+            }
         }
 
         //API key:f7731380165624ae4e30c6a107caec4c
@@ -77,9 +79,9 @@ public class fridgeController extends AppCompatActivity{
                     String output = "";
                     StringBuilder response = new StringBuilder();
 
-                    while((output - bff.readLine()) != null) {
-
-                    }
+//                    while((output - bff.readLine()) != null) {
+//
+//                    }
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 } catch (IOException p) {

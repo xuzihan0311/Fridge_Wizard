@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 
 import com.appathon.alex.fridge_wizard.R;
 import android.widget.AdapterView.OnItemSelectedListener;
 
+import static android.R.id.list;
 import static com.appathon.alex.fridge_wizard.R.id.categorySpinner;
 import static com.appathon.alex.fridge_wizard.R.id.itemSpinner;
 
@@ -44,6 +46,7 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
                 Intent myIntent = new Intent(view.getContext(), fridgeController.class);
                 startActivityForResult(myIntent, 0);
             }
