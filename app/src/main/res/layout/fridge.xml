@@ -11,4 +11,49 @@
     tools:context="com.appathon.alex.fridge_wizard.Fridge"
     android:background="@drawable/fridge">
 
+    <Button
+        android:text="add more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/addItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignStart="@+id/listView"
+        tools:textSize="14sp"
+        android:fontFamily="casual" />
+
+    <Button
+        android:text="remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteItem"
+        android:layout_alignBaseline="@+id/addItem"
+        android:layout_alignBottom="@+id/addItem"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual" />
+
+    <Button
+        android:text="generate recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/generateRecipes"
+        android:layout_alignBaseline="@+id/deleteItem"
+        android:layout_alignBottom="@+id/deleteItem"
+        android:layout_toRightOf="@+id/deleteItem"
+        android:layout_toEndOf="@+id/deleteItem"
+        android:fontFamily="casual" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addItem"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp" />
 </RelativeLayout>
