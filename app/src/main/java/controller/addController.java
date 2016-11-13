@@ -28,8 +28,6 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
 
     Button addButton;
     Button cancelButton;
-//    ListView itemsList;
-//    ListAdapter itemsListAdapter;
 
     static String selectedItem;
     static boolean isAdded = false;
@@ -53,14 +51,6 @@ public class addController extends AppCompatActivity implements OnItemSelectedLi
         addButton = (Button) findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-//                itemsList = (ListView) findViewById(R.id.listViewitems);
-//                ArrayList<String> listItems = new ArrayList<>();
-//                listItems.add(selectedItem);
-//                itemsListAdapter = new ArrayAdapter<String>(this,
-//                        android.R.layout.simple_list_item_1, listItems);
-//                itemsList.setAdapter(itemsListAdapter);
-//                itemsListAdapter.notifyDataSetChanged();
-
                 isAdded = true;
 
                 Intent myIntent = new Intent(view.getContext(), fridgeController.class);

@@ -45,17 +45,14 @@ public class fridgeController extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fridge);
 
-        addItem = (Button) findViewById(R.id.addItem);
-        addItem.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), addController.class); //From the add_items.xml Controller
-                startActivityForResult(myIntent, 0);
-            }
-        });
-
         list = (ListView) findViewById(R.id.listViewitems);
         if (addController.isAdded) {
             myItems.add(addController.selectedItem);
+            addController.isAdded = false;
+        }
+        if (removeController.isRemoved) {
+            myItems.remove(removeController.removedItem);
+            removeController.isRemoved = false;
         }
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, myItems);
         list.setAdapter(adapter);
@@ -66,6 +63,22 @@ public class fridgeController extends AppCompatActivity{
                 stringItems[a] = adapter.getItem(a).toString();
             }
         }
+
+        addItem = (Button) findViewById(R.id.addItem);
+        addItem.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), addController.class); //From the add_items.xml Controller
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        deleteItem = (Button) findViewById(R.id.deleteItem);
+        deleteItem.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), removeController.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
 
         //API key:f7731380165624ae4e30c6a107caec4c
         //Search with Ingredients call: http://food2fork.com/api/search
@@ -96,13 +109,6 @@ public class fridgeController extends AppCompatActivity{
                 } catch (IOException p) {
                     p.printStackTrace();
                 }
-            }
-        });
-
-        deleteItem = (Button) findViewById(R.id.deleteItem);
-        deleteItem.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                deleteItem();
             }
         });
     }

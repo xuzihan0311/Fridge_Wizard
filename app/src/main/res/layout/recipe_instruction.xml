@@ -33,7 +33,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="34dp"
         android:inputType="textPersonName"
         android:text="Recipe Instruction"
         android:ems="10"
@@ -45,7 +45,19 @@
         android:textStyle="normal|bold"
         android:textSize="18sp"
         android:textColor="?android:attr/textColorPrimary"
-        android:layout_weight="0.25" />
+        android:layout_weight="0.61" />
+
+    <Button
+        android:text="Go Back To Recipes"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/goBackR"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"
+        android:textAllCaps="false" />
 
     <Button
         android:text="Go Back To Your Fridge"
@@ -57,6 +69,6 @@
         android:textSize="18sp"
         android:textStyle="normal|bold"
         android:textAllCaps="false"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>
