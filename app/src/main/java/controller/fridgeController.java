@@ -14,6 +14,7 @@ import com.appathon.alex.fridge_wizard.R;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -64,6 +65,7 @@ public class fridgeController extends AppCompatActivity{
             for (int a = 0; a < adapter.getCount(); a++) {
                 System.out.println(adapter.getItem(a).toString());
                 stringItems[a] = adapter.getItem(a).toString();
+                System.out.println(stringItems[a]);
             }
         }
 
@@ -76,21 +78,22 @@ public class fridgeController extends AppCompatActivity{
                 Intent intent = new Intent(view.getContext(), instructionController.class); //From the instruction.xml Controller
                 startActivityForResult(intent, 0);
                 ingredient = generateIngredients(stringItems);
-                String url_link = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&"
-                        +ingredient+"&limitLicense=false&number=4&ranking=1";
+                String url_link = "https://community-food2fork.p.mashape.com/search?key=f7731380165624ae4e30c6a107caec4c&q=shredded+chicken";
                 try {
                     URL url = new URL(url_link);
-                    HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setDoOutput(true);
-
+                    //int responseCode = conn.getResponseCode();
                     BufferedReader bff =  new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
                     String output = "";
-                    StringBuilder response = new StringBuilder();
+                    String response = "";
 
-//                    while((output - bff.readLine()) != null) {
-//
-//                    }
+                    while((output = bff.readLine()) != null) {
+                        response += output;
+                    }
+                    bff.close();
+                    System.out.println(response);
+
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 } catch (IOException p) {
@@ -99,6 +102,7 @@ public class fridgeController extends AppCompatActivity{
             }
         });
 
+
         deleteItem = (Button) findViewById(R.id.deleteItem);
         deleteItem.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -106,6 +110,7 @@ public class fridgeController extends AppCompatActivity{
             }
         });
     }
+
 
     private void deleteItem() {
         //implement delete Item when clicked
@@ -119,6 +124,7 @@ public class fridgeController extends AppCompatActivity{
                 i += ingre[a] + "%2C";
             }
         }
+        System.out.println(i + "here");
         return i;
     }
 }
