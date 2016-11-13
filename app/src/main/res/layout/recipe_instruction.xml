@@ -16,7 +16,8 @@
         android:textAlignment="center"
         android:textStyle="normal|bold"
         android:textSize="24sp"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textColor="?android:attr/textColorPrimary" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -33,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="Recipe Instruction"
         android:ems="10"
         android:id="@+id/recipe"
         android:layout_marginTop="25dp"
@@ -41,5 +42,6 @@
         android:layout_marginRight="10dp"
         android:fontFamily="casual"
         android:textStyle="normal|bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="?android:attr/textColorPrimary" />
 </LinearLayout>

@@ -16,7 +16,8 @@
         android:textAlignment="center"
         android:text="Add Item"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:textColor="?android:attr/textColorPrimary" />
 
     <TextView
         android:text="Category:"
@@ -28,7 +29,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/textColorPrimary" />
 
     <Spinner
         android:layout_width="match_parent"
@@ -48,7 +50,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="25dp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/textColorPrimary" />
 
     <Spinner
         android:layout_width="match_parent"
@@ -70,7 +73,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="25dp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/textColorPrimary" />
 
     <Button
         android:text="Cancel"
