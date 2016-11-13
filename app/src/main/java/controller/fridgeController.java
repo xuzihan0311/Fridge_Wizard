@@ -114,23 +114,8 @@ public class fridgeController extends AppCompatActivity{
                 }
             }
         });
-<<<<<<< HEAD
-=======
-
-
-        deleteItem = (Button) findViewById(R.id.deleteItem);
-        deleteItem.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                deleteItem();
-            }
-        });
->>>>>>> origin/master
     }
 
-
-    private void deleteItem() {
-        //implement delete Item when clicked
-    }
     private String generateIngredients(String[] ingre) {
         String i = "";
         for (int a = 0; a < ingre.length; a++) {
