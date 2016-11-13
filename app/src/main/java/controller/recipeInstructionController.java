@@ -23,7 +23,7 @@ public class recipeInstructionController extends AppCompatActivity {
         backToFridge = (Button) findViewById(R.id.goBack);
         backToFridge.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), FridgeController.class);
+                Intent myIntent = new Intent(view.getContext(), fridgeController.class);
                 startActivityForResult(myIntent, 0);
             }
         });
