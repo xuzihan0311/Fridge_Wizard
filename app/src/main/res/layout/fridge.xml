@@ -12,7 +12,7 @@
     android:background="@drawable/fridge">
 
     <Button
-        android:text="add more"
+        android:text="Add Item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -23,20 +23,26 @@
         android:layout_alignLeft="@+id/listView"
         android:layout_alignStart="@+id/listView"
         tools:textSize="14sp"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold" />
 
     <Button
-        android:text="remove"
+        android:text="Remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/deleteItem"
         android:layout_alignBaseline="@+id/addItem"
         android:layout_alignBottom="@+id/addItem"
         android:layout_centerHorizontal="true"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false" />
 
     <Button
-        android:text="generate recipe"
+        android:text="Generate Recipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -46,7 +52,10 @@
         android:layout_alignBottom="@+id/deleteItem"
         android:layout_toRightOf="@+id/deleteItem"
         android:layout_toEndOf="@+id/deleteItem"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
 
     <ListView
         android:layout_width="match_parent"
