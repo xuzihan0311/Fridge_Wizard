@@ -12,7 +12,7 @@ import com.appathon.alex.fridge_wizard.R;
  * Created by xingxing on 11/13/16.
  */
 
-public class recipeInstructionController extends AppCompatActivity {
+public class recipe_InstructionController extends AppCompatActivity {
     Button backToFridge;
 
     @Override
@@ -20,10 +20,10 @@ public class recipeInstructionController extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recipe_instruction);
 
-        backToFridge = (Button) findViewById(R.id.goBack);
+        backToFridge = (Button) findViewById(R.id.backToFridge);
         backToFridge.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), fridgeController.class);
+                Intent myIntent = new Intent(view.getContext(), FridgeController.class);
                 startActivityForResult(myIntent, 0);
             }
         });

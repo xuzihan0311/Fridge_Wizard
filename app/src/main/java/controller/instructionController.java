@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,28 +27,28 @@ public class instructionController extends AppCompatActivity {
         ImageView image4 = (ImageView) findViewById(R.id.recipe4);
         image1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         image2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         image3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         image4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
@@ -57,28 +59,28 @@ public class instructionController extends AppCompatActivity {
         TextView name4 = (TextView) findViewById(R.id.recipeName4);
         name1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         name2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         name3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
         name4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), recipeInstructionController.class);
+                Intent myIntent = new Intent(view.getContext(), recipe_InstructionController.class);
                 startActivityForResult(myIntent, 0);
             }
 
